@@ -1,0 +1,6 @@
+<h3>Page de profil</h3>
+<fieldset *ngIf="currentUser">
+  <legend>Profil de {{currentUser.nickname}}</legend>
+  <p>Email : {{currentUser.email}}</p>
+  <p>Role : {{currentUser.isAdmin ? 'Administrateur' : 'Utilisateur'}}</p>
+</fieldset>
